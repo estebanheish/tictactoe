@@ -1,4 +1,3 @@
-
 boardNames = [ "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve" ];
 player = "X";
 
@@ -26,15 +25,15 @@ function win() {
     
     for (x of rows.concat(cols, diags)) {
         if (x[0] != "" && x[0] == x[1] && x[1] == x[2]) {
-            alert("Jugador " + player + " gana.");
+            alert("Jugador " + player + " gana");
             window.location.reload();
             return;
         }
     }
 
     if (board.every(x => x != "")) {
-        window.location.reload();
         alert("Empate");
+        window.location.reload();
     }
 }
 
@@ -49,7 +48,7 @@ function move(celda) {
             player = "X";
         }
     } else {
-        alert("Ahi noooooooooooooooooooo")
+        alert("Movimiento ilegal")
     }
 }
 
