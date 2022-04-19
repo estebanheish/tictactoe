@@ -1,1 +1,1 @@
-# [web](https://estebanheish.github.io/tictactoe_web/)
+# [tictactoe](https://estebanheish.github.io/tictactoe/)
